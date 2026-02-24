@@ -1,0 +1,16 @@
+import random 
+def guess():
+    num = random.randint(1,10)
+    attempts = 0 
+    while True : 
+        attempts+=1
+        guess = int(input())
+        if(guess>num):
+            print("too high")
+        elif(guess<num):
+            print("too low")
+        else:
+            print("correct")
+            print(f"no. of attempts : {attempts}")
+            break
+guess()
